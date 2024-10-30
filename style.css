@@ -546,11 +546,6 @@ footer {
 /* footer */
 @import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
 
-/* :root {
-  --m: 4rem;
-} */
-
-
 
 h2 {
   font-weight: 500;
@@ -573,7 +568,7 @@ footer {
   margin-top: 10vh;
   z-index: 500;
   width: 100%;
-  height: 35vh;
+  height: 50vh;
 
   display: flex;
   flex-direction: row;
