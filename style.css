@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-color: #180148;
+  background: linear-gradient(30deg, #09545E, #05BEF0);
   color: #fff;
   /* padding: 8rem; */
 }
@@ -42,7 +42,7 @@ body {
 .slider {
   display: flex;
   width: 500%;
-  height: 55rem;
+  height: 30rem;
   transition: all 0.25s ease-in;
   transform: translateX(0);
 }
@@ -135,7 +135,6 @@ body {
   font-size: 1.3rem;
   color: #B5B4B4;
   margin-bottom: 2rem;
-  margin-right: 5rem;
 }
 @media only screen and (max-width: 800px) {
   .slider .box .details p {
@@ -300,7 +299,7 @@ body {
 }
 
 .trail {
-  bottom: 5%;
+  bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
   width: 60%;
@@ -317,7 +316,6 @@ body {
   }
 }
 .trail div {
-  padding: 2rem;
   border-top: 3px solid #fff;
   cursor: pointer;
   opacity: 0.3;
@@ -348,22 +346,19 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #ebedf3;
     color: #fff;
-    line-height: 1.6;
+    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: linear-gradient(to right, #007acc, #00d4ff);
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(0deg, #09545E, #05BEF0);
 }
 
-.logo {
-    font-size: 1.5rem;
-    color: #29c1c9;
-   
-}
+
 
 nav ul {
     display: flex;
@@ -385,7 +380,7 @@ nav ul li a:hover {
 }
 
 .hero {
-  height: 80vh;
+  height: 50vh;
   background-image: url('images/main.jpg');
   display: flex;
   align-items: center;
@@ -445,4 +440,104 @@ footer {
     padding: 20px;
     background-color: #12161e;
     color: #9ab2c2;
+}
+
+/* Services */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  padding: 3em 1em;
+
+}
+.flex-container .flex-item {
+  margin: 25px;
+  border-radius: 2px;
+  padding: 4.5em 5em;
+  position: relative;
+  min-height: 260px;
+  border-radius:5px;
+  }
+.flex-container .flex-item:focus {
+        box-shadow: 0 0 3pt 2pt red;
+    }
+.flex-container .flex-item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+  border-radius: 0px;
+}
+.flex-container .flex-item a span {
+  -webkit-transform: translateZ(50px) scale(0.7);
+          transform: translateZ(50px) scale(0.7);
+}
+
+.tilt {
+  box-shadow: 0 20px 30px -13px rgba(0, 0, 0, 0.7);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+          transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+.tilt:hover {
+  box-shadow: 0 40px 70px -15px rgba(0, 0, 0, 0.7);
+}
+
+.bg-one {
+  background: linear-gradient(45deg, #ff194b, #8215f0);
+}
+
+.bg-two {
+  background: linear-gradient(45deg, #ff5f4b, #821564);
+}
+
+.bg-three {
+  background: linear-gradient(45deg, #ff00bb, #82000f);
+}
+
+.flex-item span > img {
+  width:200px;
+}
+.flex-item .text{
+  color:white;
+  font-weight:800;
+  font-family:Courier;
+  font-size:12px;
+  position:absolute;
+  bottom:20px;
+}
+.service {
+  font-size: 2rem;
+  margin-top: 20px;
+
 }
